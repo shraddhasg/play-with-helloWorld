@@ -5,36 +5,30 @@
     <meta name="Author" content="Shraddha Shinde, initial-scale=1.0" />
     <title>LANGUAGE</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css"
+    />
   </head>
   <body>
     <header>
       <h2>CODES IN EACH LANGUAGE</h2>
     </header>
 
-    <!-- <div class="language">
-      <div id="title-bar">My Codes</div>
-      <div class="main-pallet">
-        <div class="option">
-          <div class="num">Java</div>
-          <div class="num">JavaScript</div>
-          <div class="num">C</div>
-          <div class="num">CPP</div>
-          <div class="num">Ruby</div>
-          <div class="num">Python</div>
-          <div class="num">C#</div>
-          <div class="num">PHP</div>
-          <div class="num">HTML</div>
-          <div class="num">Kotlin</div>
-          <div class="num">Go</div>
-          <div class="num">R</div>
-        </div>
-        <div class="action">output=</div>
-      </div>
-    </div> -->
-
     <div class="language">
       <div id="title-bar">My Codes</div>
       <div class="mainPalet">
+        <div id="action">
+          <!-- <iframe
+            src="code.html"
+            height="90%"
+            width="90%"
+            title="Iframe Example"
+          ></iframe> -->
+          <pre>
+            <code class = "id">Hello world program</code>
+          </pre>
+        </div>
         <div class="option">
           <div class="num" onclick="display(event)">Java</div>
           <div class="num" onclick="display(event)">JavaScript</div>
@@ -49,9 +43,6 @@
           <div class="num" onclick="display(event)">Go</div>
           <div class="num" onclick="display(event)">R</div>
         </div>
-        <div id="action">
-          <pre id="output">output</pre>
-        </div>
       </div>
     </div>
     <br />
@@ -62,5 +53,15 @@
       </b>
     </footer>
     <script src="main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/go.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
   </body>
 </html>

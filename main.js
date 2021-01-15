@@ -6,21 +6,25 @@ function display(event) {
 
 function showCode(text) {
   if (text == "Java") {
-    var pre = document.createElement("pre");
-    pre.className = "line-numbers";
-    var code = document.createElement("code");
-    code.className = "language-java ";
-    var node = document.createTextNode(
-      'class HelloWorld{ public static void main(String args[]){ System.out.println("Hello world")}}'
-    );
-    code.appendChild(node);
+    // var element = document.getElementsById("id");
+    // console.log(element);
+    // var element = document.getElementsByTagName("code");
+    // var pre = document.createElement("pre");
     // var code = document.createElement("code");
-    // code.innerText = "Hello world in " + text + " is =";
-    // code.innerText +=
-    //   '\n\nclass HelloWorld{ \n \t\t public static void main(String args[]){\n \t \t System.out.println("Hello world")\n\t}\n}';
+    // code.textContent =
+    //   'class HelloWorld{ \npublic static void main(String args[]){\nSystem.out.println("Hello world")\n}\n};';
+    console.log(document.getElementsByTagName("code"));
+    document.getElementsByTagName("code")[0].innerText =
+      'class HelloWorld{ \npublic static void main(String args[]){\nSystem.out.println("Hello world")\n}\n};';
 
-    pre.appendChild(code);
-    document.getElementById("action").appendChild(pre);
+    // code.innerText =
+    //   'class HelloWorld{ \npublic static void main(String args[]){\nSystem.out.println("Hello world")\n}\n};';
+    // var data = document.createTextNode(
+    //   'class HelloWorld{ \npublic static void main(String args[]){\nSystem.out.println("Hello world")\n}\n};'
+    // );
+    // code.appendChild(data);
+    // pre.appendChild(code);
+    // document.getElementById("action").appendChild(code);
   } else if (text == "C") {
     var code = document.createElement("code");
     code.innerText = "Hello world in " + text + " is =";
